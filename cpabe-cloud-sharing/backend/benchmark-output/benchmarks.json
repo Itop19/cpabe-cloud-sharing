@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "sizeBytes": 102400,
+      "encryptionMs": 2111.2536
+    },
+    {
+      "sizeBytes": 512000,
+      "encryptionMs": 276.8879000000002
+    },
+    {
+      "sizeBytes": 1048576,
+      "encryptionMs": 96.23500000000013
+    },
+    {
+      "sizeBytes": 5242880,
+      "encryptionMs": 339.33420000000024
+    },
+    {
+      "sizeBytes": 10485760,
+      "encryptionMs": 577.9282000000003
+    }
+  ],
+  "cpuUsage": {
+    "user": 343000,
+    "system": 125000
+  },
+  "memoryUsage": {
+    "rss": 148185088,
+    "heapTotal": 72392704,
+    "heapUsed": 37632576,
+    "external": 56334303,
+    "arrayBuffers": 24641655
+  }
+}
