@@ -41,8 +41,13 @@ async function uploadFile(req, res) {
     await logAudit({ userId: req.user?.id, username: req.user?.username, action: 'upload', details: file.originalname, outcome: 'success' });
     return res.status(201).json({ message: 'File uploaded', file: record, encryption: encrypted });
   } catch (error) {
-    return res.status(500).json({ message: 'Upload failed. Please check that the file is valid and try again.' });
-  }
+    console.error("UPLOAD ERROR:");
+    console.error(error);
+
+    return res.status(500).json({
+        message: error.message,
+        stack: error.stack
+    });
 }
 
 async function listFiles(req, res) {
